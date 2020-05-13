@@ -171,5 +171,5 @@ p
 
 .tekst:hover
 {
-	animate ="swing"
+	transform: scale(0.4) translateX(-500px);
 }
