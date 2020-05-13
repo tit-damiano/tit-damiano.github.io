@@ -18,6 +18,18 @@ p
   50% { background-color: black }
   100% { background-color: #66ccff }
 }
+@keyframes cos
+{
+  0% { background-color: #ffff99 }
+  10% { background-color: gray }
+  25% { background-color: red }
+  37% { background-color: orange }
+  50% { background-color: green }
+  62% { background-color: blue }
+  75% { background-color: yellow }
+  87% { background-color: pink }
+  100% { background-color: #ffff99 }
+}
 
 .blue1 
 { 
@@ -126,18 +138,7 @@ p
 	transform: translateY(10000px);
 }
 
-@keyframes cos
-{
-  0% { background-color: #ffff99 }
-  10% { background-color: gray }
-  25% { background-color: red }
-  37% { background-color: orange }
-  50% { background-color: green }
-  62% { background-color: blue }
-  75% { background-color: yellow }
-  87% { background-color: pink }
-  100% { background-color: #ffff99 }
-}
+
 
 .yellow2 
 { 
