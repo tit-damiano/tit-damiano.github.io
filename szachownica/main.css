@@ -1,37 +1,174 @@
-p {
+p 
+{
     font: 48px Arial;
     text-align: center;
 	color: silver;
-	
-  }
-
-.container {width: 99%;
-     background-color: green;
 }
-.blue1 { width: 33%; 
-background-color: #66ccff;
-height: 250px; float: left; }
-.blue2 { width: 33%; 
-background-color: #3399ff;
-height: 250px; float: left; }
-.blue3 { width: 33%; 
-background-color: #0066cc;
-height: 250px; float: left; }
-.orange1 { width: 33%; 
-background-color: #ffcc66;
-height: 250px; float: left;}
-.orange2 { width: 33%; 
-background-color: #ff9933;
-height: 250px; float: left;}
-.orange3 { width: 33%; 
-background-color: #ff6600;
-height: 250px; float: left;}
-.yellow1 { width: 33%; 
-background-color: #ffffcc;
-height: 250px; float: left;}
-.yellow2 { width: 33%; 
-background-color: #ffff99;
-height: 250px; float: left;}
-.yellow3 { width: 33%; 
-background-color: #ffff66;
-height: 250px; float: left;}
+
+.container 
+{
+	width: 99%;
+	background-color: green;
+	text-align: center;
+}
+
+@keyframes changeColors
+{
+  0% { background-color: #66ccff }
+  50% { background-color: black }
+  100% { background-color: #66ccff }
+}
+
+.blue1 
+{ 
+	width: 33%; 
+	background-color: #66ccff;
+	height: 250px;
+	float: left;
+	color: black;
+	font-size: 100px;
+}
+
+.blue1:hover
+{
+	
+	transform: rotate(45deg);
+}
+
+.blue2 
+{ 
+	width: 33%;
+	background-color: #3399ff;
+	height: 250px; 
+	float: left;
+	font-size: 100px;
+	transition: 0.3s transform ease-in-out;
+}
+
+.blue2:hover 
+{
+	animation-name: changeColors;
+	animation-duration: 5s;
+}
+
+.blue3 
+{ 
+	width: 33%; 
+	background-color: #0066cc;
+	height: 250px; 
+	float: left; 
+	transition: 0.3s transform ease-in-out;
+	font-size: 100px;
+}
+
+.blue3:hover
+{
+	transform: scale(3);
+}
+
+.orange1 
+{ 
+	width: 33%; 
+	background-color: #ffcc66;
+	height: 250px; 	
+	float: left;
+	transition: 10s transform ease-in-out;
+	font-size: 100px;
+}
+
+.orange1:hover
+{
+	transform: scale(0.1);
+}
+
+.orange2 
+{ 
+	width: 33%; 
+	background-color: #ff9933;
+	height: 250px; 
+	float: left;
+	transition: 1s transform ease-in-out;
+	font-size: 100px;
+}
+
+.orange2:hover
+{
+	
+	transform: skewY(-10deg);
+}
+
+.orange3 
+{ 
+	width: 33%; 
+	background-color: #ff6600;
+	height: 250px; 	
+	float: left;
+	font-size: 100px;
+}
+
+.orange3:hover
+{
+	transform: scale(0);
+}
+
+.yellow1 
+{ 
+	width: 33%; 
+	background-color: #eeeebb;
+	height: 250px;
+	float: left;
+	transition: 1s transform ease-in-out;
+	font-size: 100px;
+}
+
+.yellow1:hover
+{
+	transform: translateY(10000px);
+}
+
+@keyframes cos
+{
+  0% { background-color: #ffff99 }
+  10% { background-color: gray }
+  25% { background-color: red }
+  37% { background-color: orange }
+  50% { background-color: green }
+  62% { background-color: blue }
+  75% { background-color: yellow }
+  87% { background-color: pink }
+  100% { background-color: #ffff99 }
+}
+
+.yellow2 
+{ 
+	width: 33%; 
+	background-color: #ffff99;
+	height: 250px; 
+	float: left;
+	font-size: 90px;
+}
+
+.yellow2:hover
+{
+	animation-name: cos;
+	animation-duration: 5s;
+}
+
+.yellow3 
+{ 
+	width: 33%; 
+	background-color: #ffff66;
+	height: 250px; 	
+	float: left;
+	font-size: 200px;
+}
+
+.tekst
+{
+	transition: 1s transform ease-in-out;
+}
+
+.tekst:hover
+{
+	transform: scale(0.2) translateX(500px);
+}
