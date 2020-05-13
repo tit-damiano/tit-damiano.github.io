@@ -8,7 +8,52 @@ p {
 .container {width: 99%;
      background-color: green;
      
-}
+}<style>
+      #głowa {
+        width:448px;
+        height:46px;
+        font-size:24px;
+        margin:0 auto;
+        text-align:center;
+      }
+
+      #głowa > span {
+        display:block;
+        float:left;
+        width:40px;
+        line-height:40px;
+        margin:0 5px;
+        border:3px solid #FDD700;
+        background-color:#FFF;
+        border-radius:6px;
+        animation:animowany_tekst 5s linear infinite;
+        -webkit-animation:animowany_tekst 5s linear infinite;
+      }
+      }
+
+    
+      @keyframes animowany_tekst
+      {
+        0% {transform:rotate(0);}
+        50% {transform:rotate(360deg);}
+        100% {transform:rotate(360deg);}
+      }
+
+      @-webkit-keyframes animowany_tekst
+      {
+        0% {-webkit-transform:rotate(0);}
+        30% {-webkit-transform:rotate(360deg);}
+        25% {-webkit-transform:rotate(360deg);}
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="głowa">
+      <span id="neuron1">1</span><span id="neuron2">2</span><span id="neuron3">3</span><span id="neuron4">4</span><span id="neuron5">5</span><span id="neuron6">6</span><span id="neuron7">7</span><span id="neuron8">8</span><span id="neuron9">9</span>
+    </div>
 .blue1 { width: 33%; 
 background-color: #66ccff;
 height: 250px; float: left; }
