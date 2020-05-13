@@ -75,7 +75,7 @@ p
 
 .blue3:hover
 {
-	transform: scale(3);
+	transform: scale(2);
 }
 
 .orange1 
@@ -90,7 +90,7 @@ p
 
 .orange1:hover
 {
-	transform: scale(0.1);
+	transform: scale(0.3);
 }
 
 .orange2 
