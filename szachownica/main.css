@@ -171,5 +171,5 @@ p
 
 .tekst:hover
 {
-	transform: scale(0.2) translateX(500px);
+	transform: scale(0.4) translateX(-500px);
 }
